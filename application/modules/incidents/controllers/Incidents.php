@@ -139,12 +139,12 @@ class Incidents extends MX_Controller {
 	}
 
 	public function get_mawingu_customer($phone_number){
-		// $conn_string = "host=pg.net-service.cz port=5432 dbname=mawingu_production user=mawingu_stat password=Mawingu2891872";
-		// $conn = pg_connect($conn_string);
-		// if (!$conn) {
-		// 	echo "Unable to connect";
-		// 	exit;
-		// }
+		$conn_string = "host=pg.net-service.cz port=5432 dbname=mawingu_production user=mawingu_stat password=Mawingu2891872";
+		$conn = pg_connect($conn_string);
+		if (!$conn) {
+			echo "Unable to connect";
+			exit;
+		}
 
 		// $phone_number = "+".$phone_number;
 		// echo $phone_number; die();
