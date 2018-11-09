@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://nanyukiaf-ann-mawinguapi-debug.scm.azurewebsites.net/';
+$config['base_url'] = 'https://nanyukiaf-ann-mawingu-api-linux.azurewebsites.net/';
 // $config['base_url'] = 'http://localhost/mawingu/mawingu_api/';
 
 /*
