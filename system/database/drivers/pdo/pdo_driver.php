@@ -231,7 +231,7 @@ class CI_DB_pdo_driver extends CI_DB {
 	protected function _escape_str($str)
 	{
 		// Escape the string
-		// $str = $this->conn_id->quote($str);
+		$str = $this->conn_id->quote($str);
 
 		// If there are duplicated quotes, trim them away
 		return ($str[0] === "'")
