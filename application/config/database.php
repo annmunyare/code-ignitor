@@ -80,7 +80,7 @@ $db['default'] = array(
 	'username' => 'mawingu_stat',
 	'password' => 'Mawingu2891872',
 	'database' => 'mawingu_production',
-	'dbdriver' => 'pdo',
+	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
