@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Incidents extends MX_Controller {
+	
 	/**
 	 * Constructor for this controller.
 	 *
@@ -139,8 +140,7 @@ class Incidents extends MX_Controller {
 	}
 
 	public function get_mawingu_customer($phone_number){
-		$conn_string = "host=pg.net-service.cz port=5432 dbname=mawingu_production user=mawingu_stat password=Mawingu2891872";
-		$conn = pg_connect($conn_string);
+	
 		if (!$conn) {
 			echo "Unable to connect";
 			exit;
@@ -171,4 +171,35 @@ class Incidents extends MX_Controller {
 			echo "Customer not found";
 		}
 	}
+	public function wts($request)
+    {
+		// $conn_string = "host=localhost port=3306 dbname=angular user=root password=''";
+		// $conn = mysqli($conn_string);
+		// if (!$conn) {
+		// 	echo "Unable to connect";
+		// 	exit;
+		// }
+	// $this->load->library('africastalking');	
+
+		$contact = $this->db->get("contacts");
+		$ct = json_encode($contact->result());
+
+  echo $ct;
+
+	// 	$message = $request;
+	
+	// 	$recipients = +254713624254;
+    
+	
+	// 	$this->db->insert("messages","name", $request);
+
+ 	// $this->africastalking->sendMessage($recipients, $message);
+
+
+
+            
+    //    echo saved;
+
+    }
+
 }

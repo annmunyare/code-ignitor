@@ -49,17 +49,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'advertiser';
+$route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-
-/**
- * Incidents routes
-*/
-$route['incidents'] = "incidents/index";
-$route['save-incident'] = "incidents/save_incident";
-$route['get-regions'] = "incidents/get_regions";
-$route['save-sso'] = "incidents/save_sso";
-$route['search-customer/(:any)'] = "incidents/get_mawingu_customer/$1";
-$route['wtsann/(:any)'] = "incidents/wts/$1";
-
